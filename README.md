@@ -2,7 +2,21 @@
 
 <h2>How to run docker</h2>
 
+MySQL Database
+
 docker run --name=marketplacedb -e MYSQL_PASSWORD=senha -e MYSQL_USER=usuario -e MYSQL_ROOT_PASSWORD=admin123 -e MYSQL_DATABASE=marketplace -h localhost -p 3306:3306 -d mysql/mysql-server
+
+Application
+
+1. Criar a imagem:
+
+Go to MarketplaceService/docker directory and execute: 
+
+docker build -t marketplace:1.0 .
+
+2. To run the docker: 
+
+docker run  --name marketplace --network="host"  marketplace:1.0 
 
 <h2>How to access the database</h2>
 
