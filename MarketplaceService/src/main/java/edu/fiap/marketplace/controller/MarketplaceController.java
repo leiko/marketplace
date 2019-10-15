@@ -25,7 +25,7 @@ public class MarketplaceController {
 
 	}
 	
-	@RequestMapping(value = "/publish/item/update", method = RequestMethod.POST)
+	@RequestMapping(value = "/publish/item/update", method = RequestMethod.PUT)
 	public void updateItem(@RequestBody Item item) {
 		service.update(item);
 
@@ -38,8 +38,8 @@ public class MarketplaceController {
 	}
 
 	@RequestMapping(value = "/view/item", method = RequestMethod.GET)
-	public List<Item> viewQueue() {
-		return service.viewItens();
+	public List<Item> view() {
+		return service.view();
 
 	}
 

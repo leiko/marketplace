@@ -41,9 +41,9 @@ public class MarketplaceService {
 
 	}
 
-	public List<Item> viewItens() {
+	public List<Item> view() {
 		
-		log.info("viewItens:");
+		log.info("view items:");
 		List<Item> list = new ArrayList<Item>();
 		
 		for (Item item : repository.findAll()) {

@@ -25,6 +25,9 @@ public class Item {
 	@Column(name = "status", nullable = false)
 	private String status;
 	
+	@Column(name = "price", nullable = false)
+	private String price;
+	
 	public Item() {
 		
 	}
@@ -49,10 +52,14 @@ public class Item {
 		return status;
 	}
 
+	public String getPrice() {
+		return price;
+	}
+
 	@Override
 	public String toString() {
 		return "Item [id=" + id + ", user_id=" + user_id + ", title=" + title + ", description=" + description
-				+ ", status=" + status + "]";
+				+ ", status=" + status + ", price=" + price + "]";
 	}
 	
 }
