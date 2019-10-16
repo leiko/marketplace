@@ -10,9 +10,9 @@ Application
 
 1. Criar a imagem:
 
-Go to MarketplaceService/docker directory and execute: 
+Go to root directory and execute: 
 
-docker build -t marketplace:1.0 .
+docker build -t marketplace:1.0 -f docker/Dockerfile .
 
 2. To run the docker: 
 
