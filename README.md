@@ -8,7 +8,7 @@ docker run --name=marketplacedb -e MYSQL_PASSWORD=senha -e MYSQL_USER=usuario -e
 
 Application
 
-1. Criar a imagem:
+1. Create the image:
 
 Go to root directory and execute: 
 
@@ -21,6 +21,10 @@ docker run  --name marketplace --network="host"  marketplace:1.0
 <h2>How to access the database</h2>
 
 docker exec -it marketplacedb mysql -h localhost -u root -p
+
+<h2>How to access the front page</h2>
+
+http://localhost:8080/
 
 <h2>How to access the APIs</h2>
 
