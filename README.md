@@ -18,6 +18,10 @@ docker build -t marketplace:latest -f docker/Dockerfile .
 
 docker run  --name marketplace --network="host"  marketplace:latest
 
+Docker Hub:
+
+docker run  --name marketplace --network="host"  leiry/marketplace:latest
+
 <h2>How to access the database</h2>
 
 docker exec -it marketplacedb mysql -h localhost -u root -p
