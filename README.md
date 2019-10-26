@@ -12,11 +12,11 @@ Application
 
 Go to root directory and execute: 
 
-docker build -t marketplace:1.0 -f docker/Dockerfile .
+docker build -t marketplace:latest -f docker/Dockerfile .
 
 2. To run the docker: 
 
-docker run  --name marketplace --network="host"  marketplace:1.0 
+docker run  --name marketplace --network="host"  marketplace:latest
 
 <h2>How to access the database</h2>
 
